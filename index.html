@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Images/beer-logo.png">
+  <script src="https://use.fontawesome.com/633381a1e7.js"></script>
+  <title>The Beer Academy</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img class="nav-logo" src="Images/beer-logo.png" alt="logo"></a>
+      <div class="nav-links" id="nav-links-id">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#courses">COURSES</a></li>
+          <li><a href="#curriculum">CURRICULUM</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="title-box">
+      <h1 class="white-text">Become a Beer Expert</h1>
+      <h2 class="white-text">Obtain one of our diplomas and brag to all your friends about being a real beer expert.</h2>
+      <a class="title-btn" href="#contact">I need this!</a>
+    </div>
+  </section>
+
+  <!-- Courses section -->
+
+  <section id="courses">
+    <h1>Courses Offered</h1>
+    <h2>We offer a variety of courses for beer connoisseurs.</h2>
+    <div class="row">
+      <div class="courses-col">
+        <i class="fa fa-star fa-3x"></i>
+        <h2>Associate's Degree</h2>
+        <p>Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris</p>
+      </div>
+      <div class="courses-col">
+        <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i>
+        <h2>Bachelor's Degree</h2>
+        <p>Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris</p>
+      </div>
+      <div class="courses-col">
+        <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i>
+        <h2>Master's<br/>Degree</h2>
+        <p>Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Curriculum -->
+
+  <section id="curriculum">
+    <h1>Our Curriculum</h1>
+    <h2>In our course you will learn all about different kinds of beer.</h2>
+    <div class="row">
+      <div class="curriculum-col">
+        <div class="layer">
+          <h3 class="white-text">STOUT</h3>
+        </div>
+        <img class="curriculum-col-img" src="Images/stout.jpg" alt="Stout beer">
+      </div>
+      <div class="curriculum-col">
+        <div class="layer">
+          <h3 class="white-text">IPA</h3>
+        </div>
+        <img class="curriculum-col-img" src="Images/IPA.jpg" alt="IPA beer">
+      </div>
+      <div class="curriculum-col">
+        <div class="layer">
+          <h3 class="white-text">LAGER</h3>
+        </div>
+        <img class="curriculum-col-img" src="Images/lager.jpg" alt="Lager beer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h1>Testimonials</h1>
+    <h2>What our students say</h2>
+    <div class="row">
+      <div class="testimonials-col">
+        <img class="testimonials-img" src="Images/test1.jpg" alt="Happy customer 1">
+        <div class="testimonials-txt">
+          <p>Grandma used to be my only friend. Now I get invited to every party! The Beer Academy has made me the coolest bro in town.</p>
+        </div>
+      </div>
+      <div class="testimonials-col">
+        <img class="testimonials-img" src="Images/test2.jpg" alt="Happy customer 2">
+        <div class="testimonials-txt">
+          <p>I used to only drink cheap supermarket beer. Now I spend hundreds of dollars on beer. Thanks, Beer Academy!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <div class="contact-textbox">
+      <h1>Want in?</h1>
+      <h2>Send us an email and we will send you all the details!</h2>
+      <a class="contact-btn" href="mailto:sample@sample.com">Let's do it!</a>
+    </div>
+  </section>
+
+  <!-- Javascript for toggle menu -->
+  <script type="text/javascript">
+    var navLinks = document.getElementById("nav-links-id");
+    console.log(navLinks.style);
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>
